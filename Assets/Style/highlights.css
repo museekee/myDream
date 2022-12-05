@@ -1,0 +1,13 @@
+.red {
+    color: #ff0000;
+}
+.yellow {
+    color: #ffff00;
+    text-shadow: -2px 0px #000000, 0px 2px #000000, 2px 0px #000000, 0px -2px #000000;
+}
+.cyan {
+    color: #00aaff;
+}
+.darkgreen {
+    color: #008800;
+}
