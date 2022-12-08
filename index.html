@@ -26,12 +26,38 @@
                     <post-header>
                         <post-header-title>소개</post-header-title>
                     </post-header>
-                    <h3>
+                    <post-table>
+                        <pt-row>
+                            <pt-key>🏷️ 이름</pt-key>
+                            <pt-value><span class="cyan">권유호</span></pt-value>
+                        </pt-row>
+                        <pt-row>
+                            <pt-key>🏫 학력</pt-key>
+                            <pt-value>안일중학교 재학중</pt-value>
+                        </pt-row>
+                        <pt-row>
+                            <pt-key>😮 흥미</pt-key>
+                            <pt-value><span class="red">코딩</span></pt-value>
+                        </pt-row>
+                        <pt-row>
+                            <pt-key>💭 꿈</pt-key>
+                            <pt-value><span class="yellow">개발자</span></pt-value>
+                        </pt-row>
+                        <pt-row>
+                            <pt-key>🤔 관심</pt-key>
+                            <pt-value><span class="cyan">타입스크립트</span></pt-value>
+                        </pt-row>
+                        <pt-row>
+                            <pt-key>ℹ️ 여담</pt-key>
+                            <pt-value>최근 게임을 만들고 있음</pt-value>
+                        </pt-row>
+                    </post-table>
+                    <!-- <h3>
                         저는 위에 보이는 것 처럼 안일중학교에 다니는 <span class="cyan">권유호</span>입니다. <br/>
                         저는 <span class="red">코딩</span>에 흥미를 느끼며 <span class="yellow">꿈</span>이 개발자인 사람입니다. <br/>
                         최근 게임을 만들어보고 있는데 내가 만든 게임이라서, 원하는대로 씹고 뜯고 맛 보고 즐기고 할 수 있어서 재미가 있습니다. <br/>
                         요즘은 <span class="cyan">타입스크립트</span>에 관심이 있습니다.
-                    </h3>
+                    </h3> -->
                     <introduce-categories>
                         <introduce-category>💻 코딩</introduce-category>
                         <introduce-category>🟦 타입스크립트</introduce-category>
@@ -57,5 +83,9 @@
             </div>
         </div>
     </main>
+    <div id="MainDialogBack" onclick="document.getElementById(`MainDialogBack`).style.display = `none`">
+        <dialog id="MainDialog" open></dialog>
+    </div>
+    <script src="./Assets/Scripts/index.js"></script>
 </body>
 </html>
