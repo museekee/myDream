@@ -91,6 +91,7 @@ port-profile-dream {
         min-width: 400px;
         min-height: 200px;
         grid-template-rows: 50px 1fr;
+        margin-bottom: 50px;
     }
         introduce-category {
             font-size: 17px;
