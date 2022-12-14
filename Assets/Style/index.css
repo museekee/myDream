@@ -65,6 +65,9 @@ span, a, h3 {
             width: 50%;
             margin: 0 auto;
         }
+        dialog .noContents {
+            width: 50%;
+        }
         dialog h3 img, dialog post-table img {
             width: 75px;
             margin: 0;
@@ -179,7 +182,13 @@ port-profile-dream {
                     display: inline-flex;
                     align-items: center;
                     font-family: "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Dodum";
+                    flex-direction: row;
+                    flex-wrap: wrap;
                 }
+                    .noContents {
+                        display: block !important;
+                        width: 70%;
+                    }
         post-header {
             display: flex;
             align-items: center;
