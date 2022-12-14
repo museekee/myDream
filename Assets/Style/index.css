@@ -1,3 +1,11 @@
+@font-face { 
+    font-family: "DoHyeon";
+    src: url("./../fonts/DoHyeon-Regular.ttf") format("truetype");
+}
+@font-face { 
+    font-family: "Dodum";
+    src: url("./../fonts/GowunDodum-Regular.ttf") format("truetype");
+}
 :root {
     --profilePic: url("./../Img/profile.png"); 
     --profileName: "권유호";
@@ -7,11 +15,21 @@ body {
 }
 img {
     display: block;
+    border-radius: 20px;
 }
-h3 img {
+h1 {
+    font-family: 'DoHyeon';
+    font-weight: lighter;
+    font-size: 2.5rem;
+}
+h3 img, post-table img {
     display: inline-block !important;
     width: 50px;
     vertical-align: bottom !important;
+}
+span, a, h3 {
+    display: contents;
+    font-family: "Dodum";
 }
 #MainDialogBack {
     position: fixed;
@@ -26,31 +44,30 @@ h3 img {
     dialog {
         border: 7.5px solid #0088ff;
         border-radius: 30px;
-        z-index: 99999;
         max-height: 85%;
         overflow-y: auto;
+        max-width: 85%;
     }
         dialog h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
         }
         dialog h3 {
             font-size: 1.75rem;
         }
         dialog post-header-title {
-            font-size: 2.5rem;
+            font-size: 2.75rem;
         }
         dialog pt-row {
             font-size: 1.75em;
+            grid-template-columns: 250px 1fr;
         }
-            dialog pt-key {
-                width: 150px;
-            }
         dialog img {
             width: 50%;
             margin: 0 auto;
         }
-        dialog h3 img {
+        dialog h3 img, dialog post-table img {
             width: 75px;
+            margin: 0;
         }
 main {
     display: flex;
@@ -116,7 +133,7 @@ port-profile-dream {
 } */
     port-post {
         cursor: pointer;
-        padding: 10px;
+        padding: 15px;
         border: 1px solid #777777;
         border-radius: 25px;
         display: grid;
@@ -145,13 +162,23 @@ port-profile-dream {
             margin: 10px 0px 20px 0px;
         }
             pt-row {
+                display: grid;
                 font-size: 1.17em;
                 font-weight: bold;
+                grid-template-columns: 175px 1fr;
+                column-gap: 10px;
             }
                 pt-key {
-                    display: inline-block;
-                    width: 100px;
+                    display: inline-grid;
                     border-right: 1px solid #000000;
+                    text-align: center;
+                    align-items: center;
+                    font-family: "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Dodum";
+                }
+                pt-value {
+                    display: inline-flex;
+                    align-items: center;
+                    font-family: "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Dodum";
                 }
         post-header {
             display: flex;
@@ -172,6 +199,6 @@ port-profile-dream {
                 font-weight: bold;
             }
             post-header-title {
-                font-size: 25px;
-                font-weight: bold;
+                font-size: 30px;
+                font-family: 'DoHyeon';
             }
